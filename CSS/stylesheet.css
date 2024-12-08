@@ -1,0 +1,158 @@
+/*<!--
+Web Design and Client-Side Scripting
+HDCSDEV_INT
+@author Nilson Francisco
+*/
+
+/*Navbar*/
+.container-fluid{
+    background-color: rgba(178, 178, 178, 1);
+}
+.navbar {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.dropdown-menu{
+  font-size: 20px;
+}
+/*Iframe and video sets*/
+.exercise-video {
+    width: 100%; /* Ensures responsiveness */
+    height: 200px; /* Fixed height */
+    border: none; /* Removes default border */
+    border-radius: 8px; /* Optional: Matches the card's rounding */
+}
+
+.exercise-video-warm {
+    width: 500px; /* Ensures responsiveness */
+    height: 250px; /* Fixed height */
+    border: none; /* Removes default border */
+    border-radius: 8px; /* Optional: Matches the card's rounding */
+}
+
+/* Sub header and content sets*/
+.container {
+    background-color: rgba(0, 0, 0, 0.3);
+    color: #333;
+    padding: 5px;
+    margin-top: 5px;
+    margin-left: 5px;
+    margin-right: 5px;
+    border: 2px solid #110d0d;
+    border-radius: 2px;
+}
+
+/* Style footer*/
+footer {
+	text-align: center;
+	padding: 10px;
+	background-color: rgba(0, 0, 0, 0.3);
+	color: #fff;
+	margin-top: 20px;
+}
+
+/*go shopping/add basket buttons*/
+.btn-primary {
+    background-color: rgb(10, 0, 0);
+    border-color:rgba(0, 0, 0, 0.3);
+    font-weight: bolder;
+}
+
+.btn-primary:hover {
+    background-color: rgba(59, 44, 44, 0.3);
+    border-color: rgba(0, 0, 0, 0.3);
+}
+
+/*Sets for carousel*/
+.carousel-inner {
+    width: 100%;
+    height: 620px;       
+    margin: auto;        
+}
+
+.carousel-inner img {
+    height: 100%;
+    width: 100%;
+    object-fit: fill;   
+}
+
+.carousel-item {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+/* Style for shopping */
+/* Create cards to display the products */
+.product-card {
+	background-color: rgba(0, 0, 0, 0.1);
+    border: 1px solid #110d0d;
+    border-radius: 8px;
+    padding: 15px;
+    margin: 15px;
+    text-align: center;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.product-title {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+.product-price {
+    font-size: 1.1em;
+    color: rgba(7, 0, 0, 0.3);
+    margin-bottom: 10px;
+}
+
+ /* Set product images to the same size in the card */
+.product-image {
+    width: 100%;
+    height: 250px;
+    object-fit: fill;
+}
+
+.product-specs{
+    text-align: left;
+
+}
+
+/*Pedro*/
+/* General Styling */
+body {
+    background-color: white;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif
+}   
+
+/* Title Styling */
+.text-centert, h1, h2{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight:bolder;
+    text-transform:capitalize;
+    text-shadow: 2px 2px rgb(238, 229, 229);
+    text-align: center;
+    color: #333;
+}
+
+/* Paragraph Styling */
+.text-centerp,p {
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+    text-align: center;
+}
+
+/* Form Styling */
+.form-control {
+    background-color: #f8f9fa;
+    border: 1px solid #555;
+    color: rgb(0, 0, 0);
+}
+
+.form-control:focus {
+    border-color: rgb(10, 0, 0);
+    box-shadow: rgb(10, 0, 0);
+}
+
+
