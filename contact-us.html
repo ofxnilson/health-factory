@@ -1,0 +1,124 @@
+<!--
+Web Design and Client-Side Scripting
+HDCSDEV_INT
+@author Pedro Ferraz
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Contact Us - Health Factory</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Jaro:opsz@6..72&display=swap" rel="stylesheet">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="CSS/stylesheet.css">
+    </head>
+    <body>
+        <!-- Navbar -->
+        <div class="p-4 m-0 border-0">
+            <nav class="navbar navbar-expand-lg bg-body-tertiary">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="index.html"><img src="images/logo-health.jpg" alt="healthy-logo" width="100" height="100" class="rounded-circle"></a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                            </li>
+                            <li class="nav-item dropdown-e">
+                                <a class="nav-link dropdown-toggle" href="excercises.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">Excercises</a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="excercises.html#neck">Neck</a></li>
+                                    <li><a class="dropdown-item" href="excercises.html#sholders">Sholders</a></li>
+                                    <li><a class="dropdown-item" href="excercises.html#chest">Chest</a></li>
+                                    <li><a class="dropdown-item" href="excercises.html#arms">Arms</a></li>
+                                    <li><hr class="dropdown-divider"></li>
+                                    <li><a class="dropdown-item" href="excercises.html#abdomen">Abdomen</a></li>
+                                    <li><a class="dropdown-item" href="excercises.html#butt">Butt</a></li>
+                                    <li><a class="dropdown-item" href="excercises.html#legs">Legs</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="shopping.html">Shopping Healthy</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="contact-us.html">Contact us</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            <br>
+        </div>
+
+        <!-- Contact Us Section -->
+        <div class="contac-us">
+            <h2 class="text-centert">Contact Us</h2>
+            <p class="text-centerp">We'd love to hear from you! Please fill out the form below to get in touch with us.</p>
+            <form id="contactForm" class="row g-3">
+                <div class="col-md-6">
+                    <label for="name" class="form-label">Full Name</label>
+                    <input type="text" class="form-control" id="name" name="name" placeholder="Your Name" required pattern="^[a-zA-Z\s]+$" title="Name should only contain letters and spaces.">
+                </div>
+                <div class="col-md-6">
+                    <label for="email" class="form-label">Email</label>
+                    <input type="email" class="form-control" id="email" name="email" placeholder="Your Email" required>
+                </div>
+                <div class="col-12">
+                    <label for="message" class="form-label">Message</label>
+                    <textarea class="form-control" id="message" name="message" rows="5" placeholder="Your Message" required minlength="10" maxlength="500" title="Message should be between 10 and 500 characters."></textarea>
+                </div>
+                <div class="col-12 text-center">
+                    <button type="button" class="btn btn-primary" id="submitButton">Send Message</button>
+                </div>
+            </form>
+            <div class="mt-5 text-center">
+                <p>Alternatively, you can reach us at:</p>
+                <p>Email: support@healthfactory.ie</p>
+                <p>Phone: +353-123-4567</p>
+                <p>Address: 123 Fitness St, Dublin, Ireland</p>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <footer>
+            <p>&copy; 2024 healthfactory.ie</p>
+            <p>All Rights Reserved.</p>
+        </footer>
+        <script>
+            document.getElementById('submitButton').addEventListener('click', function() {
+                const name = document.getElementById('name').value;
+                const email = document.getElementById('email').value;
+                const message = document.getElementById('message').value;
+
+                // Name validation
+                if (!/^[a-zA-Z\s]+$/.test(name)) {
+                    alert('Name should only contain letters and spaces.');
+                    return;
+                }
+
+                // Email validation
+                const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+                if (!emailRegex.test(email)) {
+                    alert('Please enter a valid email address.');
+                    return;
+                }
+
+                // Message validation
+                if (message.length < 10 || message.length > 500) {
+                    alert('Message should be between 10 and 500 characters.');
+                    return;
+                }
+
+                alert('Your message has been sent successfully!');
+                document.getElementById('contactForm').reset();
+            });
+        </script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    </body>
+</html>

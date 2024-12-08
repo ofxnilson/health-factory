@@ -1,0 +1,105 @@
+    <!--
+Web Design and Client-Side Scripting
+HDCSDEV_INT
+@author Pedro Ferraz
+-->
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Health Factory - Home</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Jaro:opsz@6..72&display=swap" rel="stylesheet">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="CSS/stylesheet.css">
+    </head>
+    <body>
+        <!-- Navbar -->
+        <div class="p-4 m-0 border-0">
+            <nav class="navbar navbar-expand-lg bg-body-tertiary">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="index.html"><img src="images/logo-health.jpg" alt="healthy-logo" width="100" height="100" class="rounded-circle"></a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="#">Home</a>
+                            </li>
+                            <li class="nav-item dropdown-e">
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Exercises</a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="exercises.html#neck">Neck</a></li>
+                                    <li><a class="dropdown-item" href="exercises.html#sholders">Sholders</a></li>
+                                    <li><a class="dropdown-item" href="exercises.html#chest">Chest</a></li>
+                                    <li><a class="dropdown-item" href="exercises.html#arms">Arms</a></li>
+                                    <li><hr class="dropdown-divider"></li>
+                                    <li><a class="dropdown-item" href="exercises.html#abdomen">Abdomen</a></li>
+                                    <li><a class="dropdown-item" href="exercises.html#butt">Butt</a></li>
+                                    <li><a class="dropdown-item" href="exercises.html#legs">Legs</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="shopping.html">Shopping Healthy</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="contact-us.html">Contact us</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            <br>
+        </div>
+        <!-- Carousel -->
+		<div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+			<div class="carousel-inner">
+				<div class="carousel-item active" data-bs-interval="3000">
+					<img src="images/carousel.jpg" class="d-block w-100" alt="gym equipment">
+				</div>
+				<div class="carousel-item" data-bs-interval="3000">
+					<img src="images/home-gym.png" class="d-block w-100" alt="visit our shopping">
+					<div class="carousel-caption d-none d-md-block">
+						<a href="shopping.html" class="btn btn-secondary">Shopping Healthy</a>
+					</div>
+				</div>
+				<div class="carousel-item" data-bs-interval="3000">
+					<img src="images/carousel3.jpg" class="d-block w-100" alt="contact us">
+					<div class="carousel-caption d-none d-md-block">
+						<a href="contact-us.html" class="btn btn-secondary">Contact Us</a>
+						<h4>Our team is ready and waiting to help you improve your health</h4>
+					</div>
+				</div>
+			</div>
+			<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+				<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+				<span class="visually-hidden">Previous</span>
+			</button>
+			<button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+				<span class="carousel-control-next-icon" aria-hidden="true"></span>
+				<span class="visually-hidden">Next</span>
+			</button>
+		</div>
+
+        <!-- Content Section -->
+        <div class="index">
+            <h1 class="text-centert mt-5">About Health Factory</h1>
+            <p class="text-centerp mt-5">At Health Factory, we are dedicated to empowering you to lead a healthier lifestyle through home-based fitness. We understand that not everyone has the time or resources to go to the gym, so we offer practical solutions for staying fit in the comfort of your own home.
+                Our platform provides a wide range of workout routines targeting specific areas of the body. From strengthening your arms and shoulders to toning your legs and glutes, or building core stability with ab-focused exercises, we have something for everyone. These routines are easy to follow, adaptable to all fitness levels, and require minimal equipment, making them perfect for any home setting.            
+                In addition to workout plans, Health Factory emphasizes the importance of proper supplementation to support your fitness journey. Supplements like protein powders, energy boosters, and essential vitamins can help enhance your performance, speed up recovery, and improve overall health.
+                Whether you prefer quick HIIT sessions, strength training, or calming yoga routines, Health Factory offers structured plans to suit your lifestyle. Join our community today and discover how to stay fit, strong, and energized—all from the comfort of your home!
+            <h2 class="text-centert mt-5">The Importance of Exercise</h2>
+            <p class="text-centerp mt-5">Regular physical activity is essential for maintaining a healthy lifestyle. Exercise improves cardiovascular health, strengthens muscles, enhances flexibility, and boosts mental well-being. Whether you prefer intense workouts or gentle stretching, moving your body daily can lead to a longer, healthier life.</p>
+        </div>
+
+        <!-- Footer -->
+        <footer>
+            <p>&copy; 2024 healthfactory.ie</p>
+            <p>All Rights Reserved.</p>
+        </footer>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    </body>
+</html>
